@@ -26,6 +26,7 @@ public class JpaDemoApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		logger.info("all users->{}",dao.findAll());
+			logger.info("all users->{}",dao.findAll());
 	logger.info("user id 1001->{}",dao.findById(1001));
 	//logger.info("user id 1002->{}",dao.deleteById(1002));
 		dao.deleteById(1002);
