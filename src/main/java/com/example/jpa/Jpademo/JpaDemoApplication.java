@@ -27,6 +27,10 @@ public class JpaDemoApplication implements CommandLineRunner{
 		// TODO Auto-generated method stub
 		logger.info("all users->{}",dao.findAll());
 			logger.info("all users->{}",dao.findAll());
+				logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
+	logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
+	logger.info("update 1003->{}",dao.update(new Person(1003,"pari","berlin",new Date())));
+
 	logger.info("user id 1001->{}",dao.findById(1001));
 	logger.info("user id 1001->{}",dao.findById(1001));
 	//logger.info("user id 1002->{}",dao.deleteById(1002));
@@ -36,13 +40,7 @@ public class JpaDemoApplication implements CommandLineRunner{
 	logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
 	logger.info("update 1003->{}",dao.update(new Person(1003,"pari","berlin",new Date())));
 //	
-	logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
-	logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
-	logger.info("update 1003->{}",dao.update(new Person(1003,"pari","berlin",new Date())));
-//	logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
-	logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
-	logger.info("update 1003->{}",dao.update(new Person(1003,"pari","berlin",new Date())));
-//		
+		
 	}
 
 }

@@ -19,6 +19,10 @@ public class Person {
 	//@Column(name="name")
 	private String name;
 	private String location;
+	private int id;
+	//@Column(name="name")
+	private String name;
+	private String location;
 	private Date birthDate;
 	// always no-args constructor is required
 	public Person() {
@@ -32,6 +36,13 @@ public class Person {
 		this.birthDate = birthDate;
 	}
 
+	public Person(int id, String name, String location, Date birthDate) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.location = location;
+		this.birthDate = birthDate;
+	}
 	public Person(int id, String name, String location, Date birthDate) {
 		super();
 		this.id = id;
