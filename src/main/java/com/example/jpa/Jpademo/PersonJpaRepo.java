@@ -45,6 +45,15 @@ public class PersonJpaRepo {
 		return entityManager.merge(person);
 		
 	}
+	public Person findById(int id) {
+		return entityManager.find(Person.class, id);
+		
+	}
+public Person findById(int id) {
+		return entityManager.find(Person.class, id);
+		
+	}
+
 	public void deleteById(int id) {
 		Person person=findById(id);
 		 entityManager.remove(person);

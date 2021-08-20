@@ -36,7 +36,13 @@ public class JpaDemoApplication implements CommandLineRunner{
 	logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
 	logger.info("update 1003->{}",dao.update(new Person(1003,"pari","berlin",new Date())));
 //	
-		
+	logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
+	logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
+	logger.info("update 1003->{}",dao.update(new Person(1003,"pari","berlin",new Date())));
+//	logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
+	logger.info("inserting 1009->{}",dao.insert(new Person(1010,"tara","berlin",new Date())));
+	logger.info("update 1003->{}",dao.update(new Person(1003,"pari","berlin",new Date())));
+//		
 	}
 
 }
